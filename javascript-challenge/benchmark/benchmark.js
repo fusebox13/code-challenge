@@ -1,5 +1,4 @@
 let Benchmark = require('benchmark');
-console.log("YO!");
 
 var suite = new Benchmark.Suite;
 
