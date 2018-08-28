@@ -7,9 +7,11 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e"
+    "test:e2e": "vue-cli-service test:e2e",
+    "benchmark": "node benchmark/benchmark"
   },
   "dependencies": {
+    "benchmark": "^2.1.4",
     "vue": "^2.5.17",
     "vuex": "^3.0.1"
   },
