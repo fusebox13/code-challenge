@@ -28,6 +28,8 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('org.springframework.boot:spring-boot-starter-security')
 	compile('org.springframework.boot:spring-boot-starter-web')
+    compile group: 'org.openjdk.jmh', name: 'jmh-core', version: '1.19'
+    compile 'org.openjdk.jmh:jmh-generator-annprocess:1.19'
 	runtime('com.h2database:h2')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.security:spring-security-test')
