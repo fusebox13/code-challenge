@@ -1,21 +1,19 @@
 let Benchmark = require('benchmark');
 
-var suite = new Benchmark.Suite;
+const suite = new Benchmark.Suite;
 
-// add tests
+//TODO: Properly setup up babel-node so this script can be run via command line
+//Note:  Babel node should be included with babel cli, but there appears to be an issues on Windows
+if (process.argv[2]) {
+  const participant = process.argv[2].split('=')[1];
+  
+}
+
+
+// // add tests
 suite.add('RegExp#test', function() {
-  /o/.test('Hello World!');
+  /o/.test('Put some code here!');
 })
-.add('String#indexOf', function() {
-  'Hello World!'.indexOf('o') > -1;
-})
-.add('String#match', function() {
-  !!'Hello World!'.match(/o/);
-})
-.add('Array#filter', function() {
-  [1,2,3,4,5,6,7].filter(number => number > 3);
-})
-// add listeners
 .on('cycle', function(event) {
   console.log(String(event.target));
 })

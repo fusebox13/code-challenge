@@ -1,7 +1,5 @@
-import { solution as Dan } from "@/code-challenge/solutions/dan";
-import { solution as Jason } from "@/code-challenge/solutions/jason";
+import dan from "@/code-challenge/solutions/dan";
 
 export const participants = [
-  { name: "Dan", solution: Dan },
-  { name: "Jason", solution: Jason }
+  { name: "Dan", solution1: dan.solution1, solution2: dan.solution2 }
 ];
