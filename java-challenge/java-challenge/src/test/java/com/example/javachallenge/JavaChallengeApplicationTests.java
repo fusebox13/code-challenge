@@ -1,27 +1,30 @@
 package com.example.javachallenge;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.JsonNodeFactory;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-public class JavaChallengeApplicationTests {
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class JavaChallengeApplicationTests extends AbstractTestCases {
 
 	@Test
-	public void maxSubsetSum_returns_max_sum_for_subset() {
-		int[] arr = { 1, 3, 4, 6, 7 };
-		int max = maxSubsetSum(arr);
+	public void test_dans_solution2() throws IOException {
+		ObjectMapper mapper = new ObjectMapper();
+		//JsonNode node =  mapper.readTree(new File("./somejson.json"));
+		System.out.println(System.getProperty("user.dir"));
 
-		System.out.println(max);
-
+		Path currentRelativePath = Paths.get("");
+		String s = currentRelativePath.toAbsolutePath().toString();
+		System.out.println("Current relative path is: " + s);
 	}
 
-
-	public static int maxSubsetSum(int[] arr) {
-		arr[0] = Math.max(0, arr[0]);
-		arr[1] = Math.max(arr[0], arr[1]);
-		for (int i = 2; i < arr.length; i++)
-			arr[i] = Math.max(arr[i-1], arr[i]+arr[i-2]);
-		return arr[arr.length-1];
-	}
 }
