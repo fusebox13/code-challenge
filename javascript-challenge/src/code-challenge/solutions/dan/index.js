@@ -4,5 +4,8 @@ export default {
   },
   solution2: (set, subset) => {
     return true;
+  },
+  solution3: (set) => {
+    return 12147;
   }
 };

@@ -5,4 +5,6 @@ public class SolutionsImpl implements com.example.javachallenge.solutions.Soluti
     public boolean challengeTwo(String[] set, String[] subset) {
         return true;
     }
+
+    public int challengeThree(int[] set) { return 0; }
 }
