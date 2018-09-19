@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <span>Nothing is here.  Go away!</span>
+    <masked-input/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import MaskedInput from "./components/MaskedInput.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    MaskedInput
   }
 };
 </script>
