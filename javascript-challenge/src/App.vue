@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <masked-input/>
+    <big-ds-credit-card-box/>
   </div>
 </template>
 
 <script>
-import MaskedInput from "./components/MaskedInput.vue";
+//Import your components and showcase them here!
+import BigDsCreditCardBox from "./components/BigDsCreditCardBox.vue";
 
 export default {
   name: "app",
   components: {
-    MaskedInput
+    BigDsCreditCardBox
   }
 };
 </script>
